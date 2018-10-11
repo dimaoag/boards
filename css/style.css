@@ -445,16 +445,6 @@ img{
 }
 /* --------------- /базовые настройки ---------*/
 
-.wrapper{
-    /*background-color: black;*/
-    min-height: 100vh;
-    font-weight: bold;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
 .wrapper:before{
     content: "";
     position: absolute;
@@ -463,8 +453,32 @@ img{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.7);
+    z-index: 1;
+}
+.container{
+    z-index: 2;
+}
+.wrapper{
+    /*background: #000000 url("../images/bg_video.png") center center;*/
+    /*background-size: cover;*/
+    background-color: black;
+    min-height: 100vh;
+    font-weight: bold;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-quiz{
+    padding: 25px 30px;
+    border-radius: 30px;
 }
 header{
+    position: relative;
+    z-index: 2;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -703,6 +717,9 @@ header{
     .right-block-tel{
         text-align: center;
     }
+    .tel-popup{
+        margin: 15px 0;
+    }
 }
 @media all and (max-width: 600px){
     .know-price{
@@ -732,7 +749,7 @@ header{
     }
     .tel-popup{
         font-size: 0.9rem;
-        padding: 5px 10px;
+        padding: 10px 30px;
     }
     .examples{
         font-size: 0.8rem;
