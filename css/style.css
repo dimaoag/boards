@@ -418,11 +418,11 @@ a, a:visited { /* порядок правил для ссылок имеет з�
 
 }
 a:hover {
-    color: #26b803;
+    color: #0d47a1;
     text-decoration:none;
 }
 a:focus, a:active {
-    color: #26b803;
+    color: #0d47a1;
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
@@ -490,15 +490,15 @@ header{
     justify-content: center;
 }
 .logo img{
-    min-width: 75px;
-    width: 75px;
+    min-width: 150px;
+    /*width: 75px;*/
 }
 .left-block{
     display: flex;
 }
 
 .right-block span{
-    color: #00ca00;
+    color: #4285F4;
 }
 .right-block-tel{
     display: block;
@@ -610,10 +610,10 @@ header{
     padding-bottom: 80px;
 }
 .title_2 span{
-    color: #00ca00;
+    color: white;
 }
 .title-text-color{
-    color: #26b803;
+    color: #0d47a1;
 }
 .title-text-bottom{
     font-size: 2rem;
@@ -625,7 +625,7 @@ header{
 }
 .know-price{
     margin-top: 25px;
-    background-color: #26b803;
+    background-color: #0d47a1;
     font-size: 1.7rem;
     padding: 15px 30px;
     white-space: nowrap;
@@ -640,7 +640,7 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    background-color: #26b803;
+    background-color: #0d47a1;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -652,7 +652,7 @@ header{
 .marquiz__button{
     color: white!important;
     border: none!important;
-    background-color: #26b803!important;
+    background-color: #0d47a1!important;
 }
 .is-hidden {
     display: none;
@@ -688,7 +688,7 @@ header{
     font-size: 1.2rem;
 }
 .popup-form-btn{
-    background-color: #26b803;
+    background-color: #0d47a1;
     color: white;
     padding: 5px 50px;
 }
@@ -710,6 +710,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 15px;
     }
     .header-text{
         text-align: center;

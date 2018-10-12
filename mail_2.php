@@ -8,7 +8,7 @@ if ( $method == 'POST' ) {
     $project_name = "Tehnotop";
 //    $admin_email = "dimaoag@gmail.com";
     $admin_email = "tehnotop100@gmail.com";
-    $form_subject = "Заявка с сайта IceBerg_Quiz";
+    $form_subject = "Заявка с сайта doska.tehnotop.in.ua";
     $phone_key = 'Телефон';
     $phone_value = '';
     $message = '';
