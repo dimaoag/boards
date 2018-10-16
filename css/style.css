@@ -462,7 +462,7 @@ body{
     z-index: 2;
 }
 .wrapper{
-    background: #000000 url("../images/board_bg-min.png") center center;
+    background: #000000 url("https://i.ytimg.com/vi/j1Iqm2ivOLA/maxresdefault.jpg") center center;
     background-size: cover;
     /*background-color: black;*/
     min-height: 100vh;
