@@ -10,6 +10,7 @@ if ( $method == 'POST' ) {
     $admin_email = "tehnotop100@gmail.com";
     $form_subject = "Заявка с сайта doska.tehnotop.in.ua";
     $phone_key = 'Телефон';
+    $order_key = 'Заявка на скидку';
     $phone_value = '';
     $message = '';
 
@@ -19,6 +20,10 @@ if ( $method == 'POST' ) {
             . '<tr style="background-color: #f8f8f8;">'
             . '<td style="padding: 10px; border: #e9e9e9 1px solid;"><b>' . $phone_key . '</b></td>'
             . '<td style="padding: 10px; border: #e9e9e9 1px solid;">' . $phone_value . '</td>'
+            . '</tr></table>'
+            . '<table style="width: 100%;">'
+            . '<tr style="background-color: #f8f8f8;">'
+            . '<td style="padding: 10px; border: #e9e9e9 1px solid;"><b>' . $order_key . '</b></td>'
             . '</tr></table>';
     }
     function adopt($text)

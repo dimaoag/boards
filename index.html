@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Интерактивные доски. Винница</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/fav.png" type="image/png" />
@@ -22,7 +23,48 @@
     </script>
     <!-- Marquiz script end -->
 
-    <title>Интерактивные доски. Винница</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127577769-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127577769-1');
+        gtag('set', {'user_id': 'USER_ID'});
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter50757745 = new Ya.Metrika2({
+                        id:50757745,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50757745" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </head>
 <body>
     <div class="wrapper">
@@ -35,9 +77,10 @@
                 <div class="col-12">
                     <header>
                         <div class="left-block">
-                            <div class="logo">
+                            <div class="logo d-flex flex-column">
                                 <!--<a href="#"><img src="images/logo.png" alt="logo"></a>-->
                                 <h2 class="logo-text">TEHNO<span>TOP</span></h2>
+                                <p class="under-logo">Официальный поставщик оборудования <br> для школ и офисов</p>
                             </div>
                         </div>
                         <div class="right-block header-text">
@@ -52,9 +95,16 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="title title_2">
-                        Ответьте на 6 вопросов и получите каталог <span> интерактивных досок</span> под Ваш запрос и бюджет
+                        Как правильно выбрать <span> интерактивную доску</span> в школу или офис
                     </h1>
-                    <a href="#popup:marquiz_5bbe2c31b96dda0044a4c959" class="know-price marquiz marquiz__button marquiz__button_shadow marquiz__button_shadow marquiz__button_blicked btn-quiz">Пройдите тест и получите каталог</a>
+                    <h2 class="title_2_2">
+                        Ответьте на 3 вопроса и получите консультацию и каталог бесплатно
+                    </h2>
+                    <div class="catalog-img-wrap d-flex align-items-center justify-content-center flex-wrap">
+                        <img class="catalog-img" src="images/catalog-min.png" alt="img">
+                        <a href="#popup:marquiz_5bbe2c31b96dda0044a4c959" class="know-price marquiz marquiz__button marquiz__button_shadow marquiz__button_shadow marquiz__button_blicked btn-quiz">Пройдите тест и получите каталог</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -64,7 +114,7 @@
                     <header>
                         <div class="left-block">
                             <div class="left-text header-text footer-left-block">
-                                <p><i class="fa fa-map-marker"></i>Работаем по всей Украине</p>
+                                <p><i class="fa fa-map-marker"></i>С нами работает вся Украина</p>
                             </div>
                         </div>
                         <div class="right-block header-text">
@@ -77,11 +127,33 @@
     </div>
 
     <div id="phone-popup" class="white-popup mfp-hide phone-popup">
-        <h4>Остались вопросы? Введите свой номер и получите детальную информацию.</h4>
+        <h4>В какое время вам удобно чтобы с Вами связались?</h4>
         <div class="course-info-footer">
             <form action="#" autocomplete="off" class="popup-form js-form">
-                <input type="text" name="phone" data-mask="callback-catalog-phone" class="course-info-input" placeholder="+380 __-___-__-__" required>
-                <button href="#" class="btn popup-form-btn" type="submit">Узнать подробнее</button>
+                <div class="form-group d-flex justify-content-center flex-wrap">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio" value="Сейчас" id="now" checked>
+                        <label class="form-check-label mr-3" for="now">Сейчас</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio" value="Сегодня" id="today">
+                        <label class="form-check-label mr-3" for="today">Сегодня</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio" value="Завтра" id="tomorrow">
+                        <label class="form-check-label mr-3" for="tomorrow">Завтра</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio" value="Не важно" id="another">
+                        <label class="form-check-label mr-3" for="another">Не важно</label>
+                    </div>
+                </div>
+                <div class="form-group w-100 d-flex justify-content-around">
+                    <input type="text" name="phone" data-mask="callback-catalog-phone" class="course-info-input phone-input" placeholder="+380 __-___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <button href="#" class="btn popup-form-btn" type="submit">Узнать подробнее</button>
+                </div>
             </form>
         </div>
     </div>
@@ -91,6 +163,24 @@
             <h4>Спасибо! Ваша заявка отправлена</h4>
         </div>
     </div>
+
+
+    <div class="exitblock">
+        <div class="fon"></div>
+        <div class="modaltext">
+            <h1 class="text-center modal-close-title">Останьтесь и получите скидку 10%</h1>
+            <form action="#" class="js-form-2">
+                <div class="form-group w-100 d-flex justify-content-around mt-5">
+                    <input type="text" name="phone" data-mask="callback-catalog-phone" class="course-info-input phone-input" placeholder="+380 __-___-__-__" required>
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                    <button href="#" class="btn popup-form-btn get-discount" type="submit">Получить скидку</button>
+                </div>
+            </form>
+        </div>
+        <div class="closeblock">+</div>
+    </div>
+
 
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>

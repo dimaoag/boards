@@ -55,12 +55,74 @@ $('.js-form').each(function(){
             }
         },
         submitHandler: function(form) {
-            var phone = $this.find('input').val();
+            var phone = $this.find('input:text[name=phone]').val();
+            var radio = $("input:radio[name='radio']:checked").val();
+
+            $.ajax({
+                url: 'mail.php',
+                data: {phone: phone, radio: radio},
+                type: 'post',
+                success: function (res) {
+                    $.magnificPopup.open({
+                        items: {
+                            src: '#popup-thanks'
+                        },
+                        type: 'inline',
+                        mainClass: 'mfp-zoom-in',
+                        removalDelay: 400,
+                        autoFocusLast: false
+                    });
+                },
+                error: function () {
+                    alert('Error!')
+                },
+            });
+            return false;
+        },
+    });
+});
+
+$('.js-form-2').each(function(){
+    var $this = $(this);
+    $this.validate({
+        highlight: function(element) {
+            setTimeout(function(){
+                $(element).closest('.b-field').addClass('has-error');
+            }, 100)
+        },
+        unhighlight: function(element) {
+            $(element).closest('.b-field').removeClass('has-error');
+        },
+        onkeyup: false,
+        onclick: false,
+        rules: {
+            Имя: {
+                required: true,
+            },
+            Телефон: {
+                required: true,
+                myphone: true
+            },
+        },
+        messages: {
+            Имя: {
+                required: "Введите имя",
+            },
+            Телефон: {
+                required: "Введите номер телефона"
+            }
+        },
+        submitHandler: function(form) {
+            var phone = $this.find('input:text[name=phone]').val();
+
             $.ajax({
                 url: 'mail_2.php',
                 data: {phone: phone},
                 type: 'post',
                 success: function (res) {
+
+                    $(".exitblock").remove();
+
                     $.magnificPopup.open({
                         items: {
                             src: '#popup-thanks'
@@ -84,3 +146,18 @@ $('.js-form').each(function(){
 jQuery(function(){
     jQuery(".player").mb_YTPlayer();
 });
+
+
+
+$(document).mouseleave(function(e){
+    if (e.clientY < 10) {
+        $(".exitblock").fadeIn("fast");
+    }
+});
+
+$(document).click(function(e) {
+    if (($(".exitblock").is(':visible')) && (!$(e.target).closest(".exitblock .modaltext").length)) {
+        $(".exitblock").remove();
+    }
+});
+

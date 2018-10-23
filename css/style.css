@@ -607,9 +607,13 @@ header{
     color: #00FC00;
 }
 .title{
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-size: 3.3rem;
     font-weight: bold;
+}
+.title_2_2{
+    font-size: 2rem;
+    padding-bottom: 30px;
 }
 .title_2 span{
     color: #00FC00;
@@ -682,18 +686,78 @@ header{
     justify-content: center;
     align-items: center;
 }
-.popup-form input{
+.phone-input{
     margin: 15px 0;
     padding: 10px;
     border: none;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+.phone-popup .form-check label{
+    cursor: pointer;
 }
 .popup-form-btn{
     background-color: #009900;
     color: white;
     padding: 5px 50px;
 }
+
+.exitblock {
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}
+.exitblock .fon {
+    background: white;
+    opacity:.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.exitblock .modaltext {
+    box-sizing: border-box;
+    padding:20px 40px;
+    border: 1px solid #AEAEAE;
+    background: white;
+    position:fixed;
+    top:80px;
+    left:50%;
+    margin-left:-20%;
+    width:40%;
+    color: black;
+    box-shadow: 0 4px 10px 2px rgba(0,0,0,0.5);
+}
+.closeblock {
+    cursor:pointer;
+    position: fixed;
+    line-height:60px;
+    font-size:82px;
+    transform: rotate(45deg);
+    text-align:center;
+    top:20px;
+    right:30px;
+    color: #009900;
+}
+.closeblock:hover {
+    color: #000;
+}
+.modal-close-title{
+    font-size: 2rem;
+
+}
+.catalog-img-wrap{
+
+}
+.catalog-img{
+    width: 500px;
+    background: none;
+}
+
+
 
 @media all and (max-width: 800px){
     .know-price{
@@ -713,6 +777,9 @@ header{
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
+    }
+    .under-logo{
+        text-align: center;
     }
     .header-text{
         text-align: center;
