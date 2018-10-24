@@ -161,3 +161,4 @@ $(document).click(function(e) {
     }
 });
 
+jQuery(".title").fitText(1.2, { minFontSize: '30px', maxFontSize: '70px' });

@@ -608,13 +608,13 @@ header{
 }
 .title{
     padding-bottom: 50px;
-    font-size: 3.3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
-.title_2_2{
-    font-size: 2rem;
-    padding-bottom: 30px;
-}
+/*.title_2_2{*/
+    /*font-size: 2rem;*/
+    /*padding-bottom: 30px;*/
+/*}*/
 .title_2 span{
     color: #00FC00;
 }
