@@ -633,8 +633,11 @@ header{
     margin-top: 25px;
     background-color: #009900;
     font-size: 1.7rem;
-    padding: 15px 30px;
+    padding: 15px 30px!important;
     white-space: nowrap;
+    width: 500px;
+    text-align: left!important;
+    margin-left: 30px;
 }
 .know-price:hover{
     color: white;
@@ -753,17 +756,30 @@ header{
 
 }
 .catalog-img{
-    width: 500px;
+    width: 210px;
     background: none;
+    margin-top: 15px;
+    margin-left: -120px;
+    z-index: 2;
 }
-
 
 
 @media all and (max-width: 800px){
     .know-price{
         font-size: 1.5rem;
     }
+    .catalog-img{
+        width: 300px;
+        margin-left: 0;
+    }
 }
+@media all and (max-width: 767px){
+    .know-price{
+        width: 100%;
+        text-align: center!important;
+    }
+}
+
 @media all and (max-width: 730px){
     header{
         flex-direction: column;
